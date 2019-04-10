@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemIds">
+        <item>गैलरी से चुने !</item>
+        <item>कैमरा से चुने !</item>
+        <item>फोटो हटाये !</item>
+    </string-array>
+</resources>

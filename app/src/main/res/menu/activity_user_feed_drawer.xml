@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/video"
+            android:title="@string/video" />
+        <item
+            android:id="@+id/nav_samachar"
+            android:icon="@drawable/news"
+            android:title="@string/samachar" />
+        <item
+            android:id="@+id/nav_lekh"
+            android:icon="@drawable/notes"
+            android:title="@string/lekh" />
+        <item
+            android:id="@+id/nav_saved_post"
+            android:icon="@drawable/saved"
+            android:title="@string/savedpost" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/star"
+            android:title="@string/hamerating" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_upyog"
+            android:icon="@drawable/document"
+            android:title="@string/upyogkishart" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1.5dp"
+    android:background="@color/windowback"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rellay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgView_proPic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/ic_propic1"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_toEndOf="@+id/imgView_proPic"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="वीण कुमार"
+                        android:textColor="@color/bootom_colour"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="गुरुग्राम,"
+                            android:textColor="@color/grey"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="हरियाणा"
+                            android:textColor="@color/grey"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="."
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="2 घण्टे पहले"
+                            android:textColor="@color/grey"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/tv_shikayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/ic_error_outline_black_24dp"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="शिकायत करे "
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_saved_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_9sdp"
+                    android:layout_toLeftOf="@+id/tv_shikayat"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_saved_post"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/bookmark_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter" />
+
+                        <ImageView
+                            android:id="@+id/iv_saved_post_done"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/saved_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_user_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/really3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@+id/rellay1">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/video_thumbnail_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:background="#1b000000"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/youutube_play_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/youtube" />
+
+                    <FrameLayout
+                        android:id="@+id/video_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:tag="@string/video_component_tag">
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/really3"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:text="रबि फसल और खरीफ फसल का ट्रिक"
+                android:textColor="@color/top_view"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+
+                android:layout_below="@+id/tv_headline"
+
+                android:text="@string/long_text"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                />
+            <View
+                android:id="@+id/view_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_below="@+id/tv_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/et_line" />
+
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/view_horizontal"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Source: Times Of India"
+                android:textColor="@color/et_line"
+                android:textSize="10sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_source"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/linear_whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/whatsapp_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_total_whattsapp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:text="240K"
+                            android:textColor="@color/et_line"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/facebook_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_total_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:text="240K"
+                            android:textColor="@color/et_line"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_like"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_like_first"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/like_icon"
+                                android:contentDescription="@null"
+                                android:scaleType="fitCenter"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_like_second"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/like_iconfill"
+                                android:contentDescription="@null"
+                                android:scaleType="fitCenter"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_total_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="240K"
+                            android:textColor="@color/et_line"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/comment_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_total_cooment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:text="240K"
+                            android:textColor="@color/et_line"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

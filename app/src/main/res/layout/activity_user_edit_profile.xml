@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_title"
+                    android:textColor="@color/drawable_otp_colour"
+                    android:textSize="70sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/profile_image"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_person_black_24dp"
+                        app:civ_border_color="@color/et_line"
+                        app:civ_border_width="2dp" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/camera_back"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="60dp"
+                        android:background="@drawable/camera_back"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:backgroundTint="@color/et_line"
+                    android:textColor="@color/top_view"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:hint="@string/et_name_hint"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/et_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:textColor="@color/top_view"
+                    android:backgroundTint="@color/et_line"
+                    android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:editable="false"
+                    android:hint="@string/state"
+                    android:inputType="none"
+
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/et_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/et_line"
+                    android:textColor="@color/top_view"
+                    android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:editable="false"
+                    android:hint="@string/district"
+                    android:inputType="none"
+
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/et_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/et_line"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/top_view"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:hint="@string/village_name"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/ripple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:mrl_rippleColor="@color/drawable_otp_colour_hover"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="10dp">
+
+                    <Button
+                        android:id="@+id/btn_profile_edit_kare"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_otp_stroke"
+                        android:paddingEnd="@dimen/_40sdp"
+                        android:paddingStart="@dimen/_40sdp"
+                        android:text="@string/edit_profile"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

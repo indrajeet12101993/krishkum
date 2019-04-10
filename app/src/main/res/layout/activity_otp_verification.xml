@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/verify_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/verify"
+            android:textColor="@color/drawable_otp_colour"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/verify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/drawable_otp_colour"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otp_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toplayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:padding="@dimen/_20sdp"
+        android:text="krishkam"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wrong_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/wrong_number"
+        android:textColor="@color/drawable_otp_colour"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrong_number"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressBar_cyclic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <com.poovam.pinedittextfield.LinePinField
+                android:id="@+id/lineField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="16sp"
+                app:distanceInBetween="10dp"
+                app:highlightEnabled="false"
+                app:lineThickness="3dp"
+                app:noOfFields="6" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/btn_resend_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resendsms"
+                    android:textColor="@color/drawable_otp_colour"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_count_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_toEndOf="@id/btn_resend_sms"
+                    android:textColor="@color/drawable_otp_colour"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:mrl_rippleColor="@color/drawable_otp_colour_hover"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="10dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_otp_stroke"
+                    android:paddingEnd="@dimen/_40sdp"
+                    android:paddingStart="@dimen/_40sdp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#a3e4e4e4"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:backgroundTint="@color/et_line"
+        android:drawableStart="@drawable/search"
+        android:focusableInTouchMode="true">
+
+    </EditText>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view_search"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:mrl_rippleColor="@color/drawable_otp_colour_hover"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="10dp">
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_otp_stroke"
+            android:paddingEnd="@dimen/_40sdp"
+            android:paddingStart="@dimen/_40sdp"
+            android:text="सर्च करे !"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+</RelativeLayout>

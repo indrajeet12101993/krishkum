@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "194712771795",
+    "firebase_url": "https://krishkam-a3708.firebaseio.com",
+    "project_id": "krishkam-a3708",
+    "storage_bucket": "krishkam-a3708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194712771795:android:cb9857ee2b0496c5",
+        "android_client_info": {
+          "package_name": "in.krishkam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194712771795-3jfienh4uqh1mc2k6ei3a0rg75tf0qr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.krishkam",
+            "certificate_hash": "e26fff8a8d2402a18f8d5f7e4f01d0f3a3c766cd"
+          }
+        },
+        {
+          "client_id": "194712771795-nqknq88ji4ir3bl473nskj2fqs3i731k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUT13ACTmPWD9geqzSHBRsVmK0lPEL6jY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194712771795-nqknq88ji4ir3bl473nskj2fqs3i731k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

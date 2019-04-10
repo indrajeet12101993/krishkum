@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <stroke
+        android:width="2dp"
+        android:color="@color/drawable_otp_colour" />
+    <corners
+        android:radius="20dp" />
+
+    <gradient
+        android:endColor="@color/drawable_otp_colour"
+        android:startColor="@color/drawable_otp_colour"
+        android:type="linear" />
+</shape>

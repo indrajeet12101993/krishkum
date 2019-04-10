@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_title"
+                android:textColor="@color/drawable_otp_colour"
+                android:textSize="70sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="@color/et_line"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/et_name_hint"
+                android:textSize="25sp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:mrl_rippleColor="@color/drawable_otp_colour_hover"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="10dp">
+
+                <Button
+                    android:id="@+id/btn_aage_badhe"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_otp_stroke"
+                    android:paddingEnd="@dimen/_40sdp"
+                    android:paddingStart="@dimen/_40sdp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/et_line">
+
+            </View>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:mrl_rippleColor="@color/drawable_otp_colour_hover"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="10dp">
+
+                <Button
+                    android:id="@+id/btn_baad_me_kare"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/skip_drawable"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/skip_now"
+                    android:textColor="@color/et_line"
+                    android:textSize="15sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/iv_nav_profile"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="@color/et_line"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/tv_nav_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/iv_nav_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/bootom_colour" />
+
+            <TextView
+                android:id="@+id/tv_nav_user_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nav_user_name"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="13sp"
+                android:layout_toEndOf="@+id/iv_nav_profile"
+                android:text="@string/nav_header_subtitle"
+                android:textColor="@color/grey" />
+
+
+            <TextView
+                android:id="@+id/tv_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nav_user_mobile"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="11sp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_toEndOf="@+id/iv_nav_profile"
+                android:text="गुरुग्राम,"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nav_user_mobile"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="11sp"
+                android:layout_toEndOf="@+id/tv_district"
+                android:text="हरियाणा"
+                android:textColor="@color/grey" />
+
+
+            <Button
+                android:id="@+id/bt_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/drawable_otp_colour"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="एडिट "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/my_post"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="@string/mypost"
+            android:textColor="@color/top_view"
+
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/my_saved_post"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:text="@string/savedpost"
+            android:textColor="@color/top_view"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/place_holder_for_fragment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_1sdp">
+
+    </FrameLayout>
+
+
+</LinearLayout>

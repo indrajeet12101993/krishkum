@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="मै इस पोस्ट का विरोध करता हूँ ,क्यूकि ये पोस्ट..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonspam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="स्पैम है  "
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonashalail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="अश्लील है"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonhinshak"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="हिंशक है "
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonafwah"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="झूठी खबर /अफवाह है "
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonashhamt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="मै इशशे अशहमत हूँ"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/ब्यक्तिगत"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ब्यक्तिगत/ ब्यक्तिगत पोस्ट"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/anaykuch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="अन्य कुछ"
+            android:textSize="18sp" />
+    </RadioGroup>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/et_anay_kuch"
+        android:visibility="gone"
+        android:backgroundTint="@color/drawable_otp_colour"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/radhkare"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+
+            android:background="@android:color/holo_red_light"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="रद्द करे"
+
+
+            />
+
+        <Button
+            android:id="@+id/buttonthhikhai"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+
+
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:background="@color/drawable_otp_colour"
+            android:text="ठीक है  "
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

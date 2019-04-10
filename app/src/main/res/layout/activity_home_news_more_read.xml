@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/drawable_otp_colour">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:indeterminate="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearbeloew"
+        android:layout_below="@+id/progressBar" />
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/fb_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearbeloew"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/et_line" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_below="@+id/really3"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="Source: Times Of India"
+            android:textColor="@color/et_line"
+            android:textSize="8sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_source"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <LinearLayout
+                android:id="@+id/linear_like"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_like_first"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/like_icon"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_like_second"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/like_iconfill"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_total_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:text="240K"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/comment_icon"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/tv_total_cooment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:text="240K"
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/whatsapp_icon"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/tv_total_whattsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:text="240K"
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_facebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/facebook_icon"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/tv_total_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:text="240K"
+                        android:textColor="@color/et_line"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_1sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgView_proPic1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_propic1"
+            app:civ_border_color="@color/light_grey"
+            app:civ_border_width="2dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/imgView_proPic1"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/light_grey"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:text="Indrajeet"/>
+            <TextView
+                android:id="@+id/user_comment1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@+id/user_name1"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_height="wrap_content"
+                android:text="Indrajeet"/>
+            <TextView
+                android:id="@+id/user_flag"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/ic_flag_black_24dp"
+                android:layout_height="wrap_content"
+                android:text="8 घणटे पहले "/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
